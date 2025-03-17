@@ -108,11 +108,11 @@ function App() {
           <RadioGroup
             row
             name="Booking"
-            value={newActivity.Booking.toString()} // Convert Boolean to String
+            value={newActivity.Booking.toString()} 
             onChange={(e) => {
               setNewActivity((prev) => ({
                 ...prev,
-                Booking: e.target.value === "true", // Convert String to Boolean
+                Booking: e.target.value === "true", 
               }));
             }}
           >
