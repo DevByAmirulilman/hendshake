@@ -141,7 +141,7 @@ function App() {
   return (
     <>
       <Box sx={{ margin: "0 auto", width: "80%", p: 2 }}>
-        <Typography variant="h2" textAlign="center">List of Activities</Typography>
+        <Typography variant="h2" textAlign="center">List of Activities {submitStates.length}</Typography>
         {submitStates.length > 0 &&
           submitStates.map((submit, index) => (
             <Box key={index} sx={{ p: 1, borderBottom: "1px solid gray", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
